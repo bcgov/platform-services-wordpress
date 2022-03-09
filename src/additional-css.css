@@ -1,0 +1,237 @@
+/* ------ */
+/* Global */
+/* ------ */
+/* Search - don't want WordPress search, theme doesn't let us remove it */
+#bcgov-search {
+  display: none;
+}
+bcgov-button .search {
+  display: none;
+}
+/* Links within Engagement containers */
+div.wp-block-engagement-container div.wp-block-engagement-content a,
+div.wp-block-engagement-container div.wp-block-engagement-content a.active,
+div.wp-block-engagement-container div.wp-block-engagement-content a:active,
+div.wp-block-engagement-container div.wp-block-engagement-content a:visited,
+div.wp-block-engagement-container div.wp-block-engagement-content a:focus {
+  text-decoration: underline;
+  color: #2b4777;
+}
+div.wp-block-engagement-container div.wp-block-engagement-content a:hover {
+  color: #5f79a2;
+}
+/* Navigation block */
+ul.wp-block-navigation__container {
+  align-items: flex-start;
+  border: 1px solid #e1e1e1;
+  flex-direction: column;
+  padding: 0.66em;
+}
+ul.wp-block-navigation__container
+  > li.wp-block-navigation-item
+  > a:not([style*="text-decoration"]) {
+  padding: 0 0 0.33em 0;
+}
+/* Use this H2 selector to mimic the gov.bc.ca right-hand box headings */
+h2.gov_background {
+  background-color: #385a8a;
+  color: white;
+  font-size: 1.44em;
+  font-weight: 400;
+  padding: 8px 15px 10px 15px;
+  margin: 0;
+}
+/* BCGov primary button */
+div.wp-block-engagement-content
+  div.wp-block-button.is-style-bcgov-primary-button
+  > a.wp-block-button__link {
+  text-decoration: none;
+  color: white;
+}
+div.wp-block-engagement-content
+  div.wp-block-button.is-style-bcgov-primary-button
+  > a.wp-block-button__link:hover {
+  text-decoration: underline;
+}
+/* Pre-header sub navigation */
+div.pre-header {
+  background: #003366;
+  border: 1px solid #003b77;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+div.pre-header ul.align-left {
+  margin: 0 -15px 0 0;
+  justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -ms-flex-pack: flex-end;
+}
+div.pre-header ul li a {
+  color: white;
+  font-size: 14px;
+}
+div.pre-header ul li a.wp-block-button__link {
+  background: none;
+  text-decoration: underline;
+  border: 1px solid white;
+  border-radius: 1px;
+}
+div.pre-header ul li a.wp-block-button__link:hover {
+  background: none;
+  text-decoration: underline;
+  border: 1px solid #1a5a96;
+  border-radius: 1px;
+  color: #1a5a96;
+}
+/* Footer - ensure links within .footer-1 and .footer-2 are visible */
+footer.footer a {
+  color: white;
+}
+/* Utility class to add a light grey border to any div */
+div.border-rectangle {
+  padding: 0.5em 1em;
+  border: 1px solid rgb(225, 225, 225);
+}
+
+/* -------- */
+/* Homepage */
+/* -------- */
+/* Hero banner */
+div.homepage-hero p.homepage-headline {
+  font-weight: 700;
+}
+div.homepage-hero p.homepage-intro {
+  margin: 0 auto 1em auto;
+  max-width: 1000px;
+}
+div.homepage-hero div.wp-block-button.homepage-hero-button a {
+  margin: 1em;
+}
+div.homepage-hero div.wp-block-button.homepage-hero-button a:hover,
+div.homepage-hero div.wp-block-button.homepage-hero-button a:focus {
+  box-shadow: 0px 0px 0.4em 0.2em rgb(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+/* Three cards in a row */
+div.wp-block-group.homepage-cards {
+  display: block;
+}
+div.wp-block-group.homepage-cards > div.wp-block-columns > div.wp-block-column {
+  align-self: stretch;
+}
+@media (max-width: 781px) {
+  div.wp-block-group.homepage-cards
+    > div.wp-block-columns
+    > div.wp-block-column:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
+/* Status indicator */
+p.global-status {
+  background-color: #606060;
+  border-radius: 0.2em;
+  color: white;
+  margin: 1em;
+  padding: 0.66em;
+}
+p.global-status-up {
+  background-color: rgb(0, 158, 15);
+}
+/* Case highlight */
+div.case-highlight {
+  background-color: rgb(155, 178, 197);
+  padding: 1em;
+}
+div.case-highlight > div.wp-block-columns {
+  margin-bottom: 0;
+}
+div.case-highlight
+  > div.wp-block-columns
+  > div.wp-block-column
+  > figure.wp-block-image {
+  margin-bottom: 0;
+}
+/* Newsletter block */
+div.newsletter {
+  background-color: rgb(155, 178, 197);
+  padding: 2em 1em;
+}
+
+/* ------------------------------ */
+/* Left-hand navigation list menu */
+/* ------------------------------ */
+ul.left-nav {
+  border: 1px solid rgb(225, 225, 225);
+  padding: 0.66em;
+}
+ul.left-nav {
+  list-style: none;
+  list-style-position: outside;
+}
+/* Top level list */
+ul.left-nav li {
+  line-height: 1.33em;
+  padding: 0.33em 0;
+}
+ul.left-nav li::marker {
+  color: #606060;
+  margin: 0 0.5em 0 0;
+}
+/* Second level list */
+ul.left-nav li ul {
+  list-style-type: square;
+  margin-top: 0.33em;
+  padding: 0.33em 0 0.33em 1em;
+}
+/* Third level list */
+ul.left-nav li ul li ul {
+  list-style-type: disclosure-closed;
+  padding: 0.33em 0 0.33em 1.5em;
+}
+
+/*--------------*/
+/* Landing page */
+/*--------------*/
+/* Note `landing-page-columns` and `landing-page-content` custom classes */
+/* Card row fills available width */
+div.landing-page-content div.wp-block-group div.wp-block-columns {
+  flex-grow: 1;
+}
+/* Cards */
+div.landing-page-content
+  div.wp-block-group
+  div.wp-block-columns
+  div.wp-block-column {
+  border: 1px solid rgb(225, 225, 225);
+  padding: 0.66em;
+  margin-bottom: 1em;
+}
+@media (max-width: 781px) {
+  /* On narrow screens, stack navigation and content columns */
+  div.landing-page-columns.wp-block-columns {
+    display: block;
+  }
+  /* Content column has no margin-left in stacked view */
+  div.landing-page-columns.wp-block-columns
+    > div.landing-page-content.wp-block-column {
+    margin-left: 0;
+  }
+  /* Card rows are normally display:flex, we need block for stacking */
+  div.landing-page-content > div.wp-block-group > div.wp-block-columns {
+    display: block;
+  }
+  /* Cards are stacked */
+  div.landing-page-content
+    > div.wp-block-group
+    > div.wp-block-columns
+    > div.wp-block-column {
+    display: block;
+  }
+  /* Cards have no margin-left since they are stacked  */
+  div.landing-page-content
+    div.wp-block-columns:not(.is-not-stacked-on-mobile)
+    > div.wp-block-column:nth-child(2n) {
+    margin-left: 0;
+  }
+}
