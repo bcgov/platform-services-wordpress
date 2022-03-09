@@ -1,5 +1,7 @@
 # platform-services-wordpress
 
+[![Lifecycle:Experimental](https://img.shields.io/badge/Lifecycle-Experimental-339999)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
+
 This repository collects code snippets and configuration details for the [Platform Services Cloud PaaS WordPress site](https://platform-services-dev.apps.silver.devops.gov.bc.ca/). Since this site is provided as a hosted service, our code is placed into the site through the WordPress GUI at runtime.
 
 ## Contact Info
