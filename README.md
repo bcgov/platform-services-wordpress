@@ -1,29 +1,20 @@
-# Application Name
+# platform-services-wordpress
 
-## What am I?
-
-I am a template repo for use by the platform services team to encourage consistency in documentation and repo layout. For those using me, do not feel like you are *required* to adhere to this layout if you feel something better would suit the needs of your application or service. Find more information about this template [here](https://github.com/bcgov-c/platform-services-docs/blob/main/repo-organization.md)
-
-**Sadly, topics are not automatically imported when creating a repository from a template. Ensure you include the following topics:**
-- `citz`
-- `devops`
-- `platform-services`
-- `supported` / `unsupported`
-- plus any additional topics that may be appropriate
-
-Please use this README as a template for your own README, including all the same information, as appropriate.
-
-Consider including your namespace name(s) in this section, so others supporting this tool know where to look.
+This repository collects code snippets and configuration details for the [Platform Services Cloud PaaS WordPress site](https://platform-services-dev.apps.silver.devops.gov.bc.ca/). Since this site is provided as a hosted service, our code is placed into the site through the WordPress GUI at runtime.
 
 ## Contact Info
 
-Relevant rocketchat channels, maybe some outside docs, vendor support portals, etc.
+Please contact the Platform Services Team via [Rocket.Chat](https://developer.gov.bc.ca/Steps-to-join-Rocket.Chat) with questions.
 
 ## Vendor Info
 
-If this is a deployment of a vendored product, include some links to relevant repos and documentation.
+The code snippets included in this repository were used in a WordPress v5.9.1 instance provided by the [GDX Digital Engagement Solutions team](https://dir.gov.bc.ca/gtds.cgi?show=Branch&organizationCode=CITZ&organizationalUnitCode=GDX%2dDES) using their "Bcgov Engagement" theme v1.1.2.
 
 ## Repo Overview
 
-Tell me where to find important stuff in this repo and provide some info about the layout.
+- `./src/additional-css.css`
 
+  - CSS styles that get applied site-wide through the Additional CSS menu (from WP admin panel, Appearance -> Customize -> Additional CSS). This includes styles for things like the Platform Status indicator, which has CSS classes added to it through the WordPress editor GUI (`global-status` and `global-status-up`). Styles like this can be removed as components are built out via custom plugins.
+
+- `./src/alert-banner.html`
+  - HTML markup plus a `<style>` block to create an instance of the `warning` style [alert banner from the Design System](https://developer.gov.bc.ca/Design-System/Alert-Banners). This component is a candidate for future development as a custom plugin if we need multiple unique alert banner instances.
