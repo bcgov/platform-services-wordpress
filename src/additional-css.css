@@ -84,6 +84,11 @@ div.pre-header ul li a.wp-block-button__link:hover {
   border-radius: 1px;
   color: #1a5a96;
 }
+/* Related Pages link block */
+div.related-pages {
+  background-color: rgb(155, 178, 197);
+  padding: 2em 1em;
+}
 /* Footer - ensure links within .footer-1 and .footer-2 are visible */
 footer.footer a {
   color: white;
