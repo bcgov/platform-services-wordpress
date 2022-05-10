@@ -89,14 +89,30 @@ div.related-pages {
   background-color: rgb(155, 178, 197);
   padding: 2em 1em;
 }
-/* Footer - ensure links within .footer-1 and .footer-2 are visible */
-footer.footer a {
-  color: white;
-}
 /* Utility class to add a light grey border to any div */
 div.border-rectangle {
   padding: 0.5em 1em;
   border: 1px solid rgb(225, 225, 225);
+}
+
+/* ------ */
+/* Footer */
+/* ------ */
+/* Ensure links within .footer-1 and .footer-2 are visible */
+footer.footer a {
+  color: white;
+}
+/* Fix compressed footer elements */
+footer.footer > section.footer-1 > div.container > div.row {
+  width: 100%;
+}
+footer.footer
+  > section.footer-1
+  > div.container
+  > div.row
+  > aside.col-sm-3.widget.widget_block {
+  flex: auto;
+  max-width: 100%;
 }
 
 /* -------- */
