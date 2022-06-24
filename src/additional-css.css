@@ -89,7 +89,7 @@ div.related-pages {
   background-color: rgb(155, 178, 197);
   padding: 2em 1em;
 }
-/* Footer - ensure links within .footer-1 and .footer-2 are visible */
+/* Footer - ensure all links within footer are visible on blue background */
 footer.footer a {
   color: white;
 }
@@ -103,6 +103,30 @@ footer.footer
   > aside.col-sm-3.widget.widget_block {
   flex: auto;
   max-width: 100%;
+}
+/* Overwrite default paragraph margins to balance link spacing */
+footer.footer
+  > section.footer-1
+  > div.container
+  > div.row
+  > aside.col-sm-3.widget.widget_block
+  > div.sidebarBox
+  > div.wp-block-columns
+  > div.wp-block-column
+  > p {
+  margin: 0.5em 0;
+}
+/* Bring miniOrange SAML login block in line with other footer links */
+footer.footer
+  > section.footer-1
+  > div.container
+  > div.row
+  > aside.col-sm-3.widget.widget_block
+  > div.sidebarBox
+  > div.wp-block-columns
+  > div.wp-block-column
+  > div.widget.widget_saml_login_widget {
+  margin: 0.5em 0;
 }
 /* Utility class to add a light grey border to any div */
 div.border-rectangle {
