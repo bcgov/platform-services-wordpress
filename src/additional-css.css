@@ -1,12 +1,11 @@
 /* ------ */
 /* Global */
 /* ------ */
-/* Search - don't want WordPress search, theme doesn't let us remove it */
-#bcgov-search {
-  display: none;
-}
-bcgov-button .search {
-  display: none;
+/* Search form container */
+bcgov-header header div.bcgov-search-container {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
 }
 /* Links within Engagement containers */
 div.wp-block-engagement-container div.wp-block-engagement-content a,
