@@ -1,0 +1,7 @@
+/* Need to hide the search function on this site since there's only one page */
+bcgov-header header div.bcgov-menu-container {
+  display: none;
+}
+bcgov-header header div.bcgov-search-container {
+  display: none;
+}
