@@ -115,6 +115,20 @@ div.pre-header ul li a.wp-block-button__link:hover {
   border-radius: 1px;
   color: #1a5a96;
 }
+/* Mono-spaced code/pre blocks */
+code {
+  margin: 0 0.3em;
+}
+code,
+pre.wp-block-code {
+  background-color: hsla(0, 0%, 0%, 0.04);
+  border-radius: 3px;
+  padding: 0.25em;
+}
+pre.wp-block-code > code {
+  background-color: unset;
+  margin: unset;
+}
 /* Related Pages link block */
 div.related-pages {
   background-color: rgb(155, 178, 197);
