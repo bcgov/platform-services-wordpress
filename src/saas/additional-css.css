@@ -1,0 +1,109 @@
+/* Utility class to add a light grey border to any div */
+div.border-rectangle {
+  padding: 0.5em 1em;
+  border: 1px solid rgb(225, 225, 225);
+}
+/* -------- */
+/* Homepage */
+/* -------- */
+/* Three cards in a row */
+div.wp-block-group.homepage-cards {
+  display: block;
+}
+div.wp-block-group.homepage-cards > div.wp-block-columns > div.wp-block-column {
+  align-self: stretch;
+}
+@media (max-width: 781px) {
+  div.wp-block-group.homepage-cards
+    > div.wp-block-columns
+    > div.wp-block-column:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
+/* Footer - ensure all links within footer are visible on blue background */
+footer.footer a {
+  color: white;
+}
+footer.footer > section.footer-1 > div.container > div.row {
+  width: 100%;
+}
+footer.footer
+  > section.footer-1
+  > div.container
+  > div.row
+  > aside.col-sm-3.widget.widget_block {
+  flex: auto;
+  max-width: 100%;
+}
+/* Overwrite default paragraph margins to balance link spacing */
+footer.footer
+  > section.footer-1
+  > div.container
+  > div.row
+  > aside.col-sm-3.widget.widget_block
+  > div.sidebarBox
+  > div.wp-block-columns
+  > div.wp-block-column
+  > p {
+  margin: 0.5em 0;
+}
+/* Bring miniOrange login block in line with other footer links */
+footer.footer
+  > section.footer-1
+  > div.container
+  > div.row
+  > aside.col-sm-3.widget.widget_block
+  > div.sidebarBox
+  > div.wp-block-columns
+  > div.wp-block-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/* Style miniOrange login button like BC Design Secondary Button */
+div.widget.widget_mooauth_widget > a > div.mo_oauth_login_button_widget {
+  background: none;
+  border-radius: 4px;
+  border: 2px solid white;
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0.5em 0;
+}
+div.widget.widget_mooauth_widget > a:focus > div.mo_oauth_login_button_widget {
+  background-color: white;
+}
+div.widget.widget_mooauth_widget > a:hover > div.mo_oauth_login_button_widget {
+  background-color: white;
+}
+div.widget.widget_mooauth_widget
+  > a
+  > div.mo_oauth_login_button_widget
+  > i.fa.fa-windowslive.mo_oauth_login_button_icon_widget {
+  display: none; /* Leaving the styles below for when I add back the lock icon */
+  border-right: none;
+  height: unset;
+  margin: 0 5px 0 0;
+  padding: 0px;
+}
+div.widget.widget_mooauth_widget
+  > a:focus
+  > div.mo_oauth_login_button_widget
+  > h3.mo_oauth_login_button_text_widget {
+  color: #313132 !important;
+  text-decoration: underline;
+}
+div.widget.widget_mooauth_widget
+  > a:hover
+  > div.mo_oauth_login_button_widget
+  > h3.mo_oauth_login_button_text_widget {
+  color: #313132 !important;
+  text-decoration: underline;
+}
+div.widget.widget_mooauth_widget > a:focus {
+  display: block;
+  outline: 4px solid #3b99fc !important;
+  outline-offset: 1px !important;
+}
