@@ -10,7 +10,7 @@ Please contact the Platform Services Team via [Rocket.Chat](https://developer.go
 
 ## Vendor Info
 
-The code snippets included in this repository were used in a WordPress v5.9.1 instance provided by the [GDX Digital Engagement Solutions team](https://dir.gov.bc.ca/gtds.cgi?show=Branch&organizationCode=CITZ&organizationalUnitCode=GDX%2dDES) using their "Bcgov Engagement" theme v1.1.2.
+The code snippets included in this repository were used in a WordPress multi-site instance provided by the [GDX Digital Engagement Solutions team](https://dir.gov.bc.ca/gtds.cgi?show=Branch&organizationCode=CITZ&organizationalUnitCode=GDX%2dDES) using their "Bcgov Engagement" theme.
 
 ## Repo Overview
 
