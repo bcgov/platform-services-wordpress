@@ -1,3 +1,6 @@
+/* ------ */
+/* Global */
+/* ------ */
 /* Utility class to add a light grey border to any div */
 div.border-rectangle {
   padding: 0.5em 1em;
@@ -19,6 +22,37 @@ div.wp-block-group.homepage-cards > div.wp-block-columns > div.wp-block-column {
     > div.wp-block-column:not(:last-child) {
     margin-bottom: 1em;
   }
+}
+/* ------------------------------ */
+/* Left-hand navigation list menu */
+/* ------------------------------ */
+ul.left-nav {
+  border: 1px solid rgb(225, 225, 225);
+  padding: 0.66em;
+}
+ul.left-nav {
+  list-style: none;
+  list-style-position: outside;
+}
+/* Top level list */
+ul.left-nav li {
+  line-height: 1.33em;
+  padding: 0.33em 0;
+}
+ul.left-nav li::marker {
+  color: #606060;
+  margin: 0 0.5em 0 0;
+}
+/* Second level list */
+ul.left-nav li ul {
+  list-style-type: square;
+  margin-top: 0.33em;
+  padding: 0.33em 0 0.33em 1em;
+}
+/* Third level list */
+ul.left-nav li ul li ul {
+  list-style-type: disclosure-closed;
+  padding: 0.33em 0 0.33em 1.5em;
 }
 /* Footer - ensure all links within footer are visible on blue background */
 footer.footer a {
