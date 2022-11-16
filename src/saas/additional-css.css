@@ -6,6 +6,7 @@ div.border-rectangle {
   padding: 0.5em 1em;
   border: 1px solid rgb(225, 225, 225);
 }
+
 /* -------- */
 /* Homepage */
 /* -------- */
@@ -23,6 +24,7 @@ div.wp-block-group.homepage-cards > div.wp-block-columns > div.wp-block-column {
     margin-bottom: 1em;
   }
 }
+
 /* ------------------------------ */
 /* Left-hand navigation list menu */
 /* ------------------------------ */
@@ -140,4 +142,12 @@ div.widget.widget_mooauth_widget > a:focus {
   display: block;
   outline: 4px solid #3b99fc !important;
   outline-offset: 1px !important;
+}
+
+/*-------------------------------*/
+/* Iframe load spinner animation */
+/*-------------------------------*/
+.iframe-parent {
+  background: url(https://cloud.gov.bc.ca/private-cloud/wp-content/uploads/sites/5/2022/11/load-spinner.gif)
+    center center no-repeat;
 }
