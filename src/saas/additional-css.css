@@ -83,6 +83,10 @@ footer.footer
   > p {
   margin: 0.5em 0;
 }
+
+/*-------------------------------*/
+/* miniOrange OAuth login button */
+/*-------------------------------*/
 /* Bring miniOrange login block in line with other footer links */
 footer.footer
   > section.footer-1
@@ -96,9 +100,13 @@ footer.footer
   flex-direction: column;
   justify-content: space-around;
 }
-/* Style miniOrange login button like BC Design Secondary Button */
+/* Button sits to the right of the parent column */
+div.widget.widget_mooauth_widget {
+  margin: 0 0 0 auto;
+}
+/* Style miniOrange login button like BC Design System Primary Button */
 div.widget.widget_mooauth_widget > a > div.mo_oauth_login_button_widget {
-  background: none;
+  background-color: white;
   border-radius: 4px;
   border: 2px solid white;
   box-shadow: none;
@@ -107,12 +115,13 @@ div.widget.widget_mooauth_widget > a > div.mo_oauth_login_button_widget {
   align-items: center;
   justify-content: space-evenly;
   margin: 0.5em 0;
+  padding: 12px 32px;
 }
 div.widget.widget_mooauth_widget > a:focus > div.mo_oauth_login_button_widget {
-  background-color: white;
+  background-color: #f2f2f2;
 }
 div.widget.widget_mooauth_widget > a:hover > div.mo_oauth_login_button_widget {
-  background-color: white;
+  background-color: #f2f2f2;
 }
 div.widget.widget_mooauth_widget
   > a
@@ -123,6 +132,12 @@ div.widget.widget_mooauth_widget
   height: unset;
   margin: 0 5px 0 0;
   padding: 0px;
+}
+div.widget.widget_mooauth_widget
+  > a
+  > div.mo_oauth_login_button_widget
+  > h3.mo_oauth_login_button_text_widget {
+  color: #313132 !important;
 }
 div.widget.widget_mooauth_widget
   > a:focus
@@ -142,6 +157,10 @@ div.widget.widget_mooauth_widget > a:focus {
   display: block;
   outline: 4px solid #3b99fc !important;
   outline-offset: 1px !important;
+}
+/* Logged in state, prevent text from wrapping  */
+div.widget.widget_mooauth_widget > div#logged_in_user > li {
+  white-space: nowrap;
 }
 
 /*-------------------------------*/
