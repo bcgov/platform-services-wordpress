@@ -206,3 +206,6 @@ div.widget.widget_mooauth_widget > div#logged_in_user > li {
   background: url(https://cloud.gov.bc.ca/private-cloud/wp-content/uploads/sites/5/2022/11/load-spinner.gif)
     center center no-repeat;
 }
+.margin-zero {
+	margin: 0;
+}
