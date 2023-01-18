@@ -383,3 +383,20 @@ div.landing-page-content
     margin-left: 0;
   }
 }
+
+/*---------------*/
+/* iframe Loader */
+/*---------------*/
+.iframe-parent {
+  background: url(https://cloud.gov.bc.ca/private-cloud/wp-content/uploads/sites/5/2022/11/load-spinner.gif)
+    center center no-repeat;
+}
+.diagram-container .engagement-page{
+	margin: 0 5%;
+}
+
+/*Platform Architecture Diagram width*/
+.diagram-container>.engagement-page>.wp-block-engagement-content{
+	flex: auto;
+	width: auto;
+}
